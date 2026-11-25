@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Star Technologies PLC — Dare to Dream</title>
+<meta name="description" content="Star Technologies PLC is a corporate venture capital and open innovation company in telecom and technology, delivering services across telecom, banking, finance, training, consulting, and government & NGOs.">
+<meta name="theme-color" content="#0a1230">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:title" content="Star Technologies PLC">
+<meta property="og:description" content="Your trusted partner for the entire digital transformation journey.">
+<meta property="og:image" content="/img/icon-512.png">
+<link rel="preload" as="image" href="/img/hero.webp" imagesrcset="/img/hero-800.webp 800w, /img/hero.webp 1600w" imagesizes="100vw" fetchpriority="high">
+<style>
+:root{--ink:#0a1230;--ink2:#121c45;--blue:#1c35a0;--blue2:#2570c4;--cyan:#2fc7eb;--txt:#3a4361;--mut:#6b7391;--bg:#f4f7fc;--line:#e3e8f3;--r:14px;--w:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{color:var(--ink);line-height:1.15;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:700}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+.sec{padding:clamp(64px,9vw,112px) 0}
+.alt{background:var(--bg)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue2);margin-bottom:14px}
+.eyebrow::before{content:"";width:28px;height:2px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.head{max-width:680px;margin-bottom:48px}
+.head.c{margin-inline:auto;text-align:center}
+.head.c .eyebrow{justify-content:center}
+.head p{margin-top:14px;color:var(--mut);font-size:1.05rem}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-p{background:linear-gradient(135deg,var(--blue),var(--blue2) 60%,var(--cyan));color:#fff;box-shadow:0 8px 24px -8px rgba(37,112,196,.6)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(37,112,196,.75)}
+.btn-o{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.btn-o:hover{background:rgba(255,255,255,.1)}
+.more{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:.85rem;color:var(--blue2)}
+.more::after{content:"+";font-size:1.1em;transition:transform .2s}
+.more:hover::after{transform:rotate(90deg)}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;background:#fff;transition:box-shadow .25s}
+.nav.s{box-shadow:0 8px 28px -14px rgba(10,18,48,.35)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;transition:height .25s}
+.nav.s .wrap{height:72px}
+.logo img{height:70px;width:auto;transition:height .25s}
+.nav.s .logo img{height:60px}
+.menu{display:flex;align-items:center;gap:34px;list-style:none}
+.menu a{color:var(--ink);font-size:.82rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;opacity:.85;transition:opacity .2s}
+.menu a:hover{opacity:1;color:var(--blue2)}
+.menu a.btn,.menu a.btn:hover{color:#fff}
+.menu .btn{opacity:1;padding:11px 22px;font-size:.78rem}
+.tog{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.tog span,.tog span::before,.tog span::after{display:block;width:24px;height:2px;background:var(--ink);margin:auto;position:relative;transition:transform .25s,background .25s}
+.tog span::before,.tog span::after{content:"";position:absolute;left:0}
+.tog span::before{top:-7px}.tog span::after{top:7px}
+.open .tog span{background:transparent}
+.open .tog span::before{transform:translateY(7px) rotate(45deg)}
+.open .tog span::after{transform:translateY(-7px) rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;min-height:min(100vh,860px);display:flex;align-items:center;color:#fff;background:var(--ink);overflow:hidden}
+.hero>img{position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,18,48,.96) 0%,rgba(10,18,48,.82) 45%,rgba(10,18,48,.25) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:140px;padding-bottom:80px}
+.hero .eyebrow{color:var(--cyan)}
+.hero h1{color:#fff;font-size:clamp(2.3rem,5.4vw,4.2rem);font-weight:800;max-width:780px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--cyan),#7fe3fb);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:560px;margin:22px 0 36px;font-size:1.1rem;color:#c9d2ec}
+.hero .acts{display:flex;flex-wrap:wrap;gap:14px}
+
+/* solutions */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -20px rgba(16,32,90,.3);border-color:transparent}
+.card .im{aspect-ratio:3/2;overflow:hidden;background:var(--line)}
+.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .im img{transform:scale(1.05)}
+.card .bd{padding:24px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card .n{font-size:.75rem;font-weight:700;color:var(--cyan);letter-spacing:.1em}
+.card .more{margin-top:auto;padding-top:6px}
+
+/* feature panels */
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.panel{position:relative;border-radius:var(--r);overflow:hidden;min-height:380px;display:flex;align-items:flex-end;color:#fff;background:var(--ink)}
+.panel img{position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.panel:hover img{transform:scale(1.04)}
+.panel::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(10,18,48,.95) 10%,rgba(10,18,48,.35) 70%,rgba(10,18,48,.15))}
+.panel .bd{position:relative;z-index:2;padding:36px}
+.panel small{font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan)}
+.panel h3{color:#fff;font-size:1.6rem;margin:8px 0 10px}
+.panel p{color:#c9d2ec;max-width:440px}
+
+/* about */
+.split{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(36px,6vw,80px);align-items:center}
+.split .ph{border-radius:var(--r);overflow:hidden;position:relative}
+.split .ph img{width:100%;aspect-ratio:4/4.2;object-fit:cover}
+.badge{position:absolute;left:20px;bottom:20px;background:#fff;border-radius:12px;padding:16px 20px;box-shadow:0 16px 36px -16px rgba(0,0,0,.4)}
+.badge b{display:block;font-size:2rem;line-height:1;color:var(--blue);font-weight:800}
+.badge span{font-size:.8rem;color:var(--mut)}
+.split p{margin-top:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 32px;list-style:none}
+.chips li{padding:8px 14px;border-radius:999px;background:var(--bg);border:1px solid var(--line);font-size:.85rem;font-weight:600;color:var(--ink2)}
+.chips li::before{content:"✓";color:var(--blue2);margin-right:6px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;counter-reset:s}
+.step{background:#fff;border-radius:var(--r);padding:34px 30px;border:1px solid var(--line);position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);position:absolute;top:22px;right:26px;font-size:2.6rem;font-weight:800;color:var(--bg);line-height:1}
+.ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--cyan));margin-bottom:22px}
+.ic svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.step p{margin-top:10px;color:var(--mut)}
+
+/* stats */
+.stats{background:linear-gradient(120deg,var(--ink) 0%,var(--blue) 70%,var(--blue2));color:#fff;padding:60px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stats b{display:block;font-size:clamp(2rem,4vw,2.9rem);font-weight:800;line-height:1.1}
+.stats span{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:#bcd0f2}
+
+/* partnership */
+.pt{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0 32px}
+.pt div{border:1px solid var(--line);border-radius:12px;padding:22px;background:#fff}
+.pt h3{font-size:1.02rem;margin-bottom:6px}
+.pt p{margin:0!important;font-size:.92rem;color:var(--mut)}
+
+/* careers */
+.join{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(28px,5vw,48px)}
+.join p{max-width:620px;margin-top:10px;color:var(--mut)}
+.join .note{display:inline-block;margin-top:14px;font-size:.85rem;font-weight:600;color:var(--ink2);background:var(--bg);padding:6px 12px;border-radius:8px}
+
+/* contact */
+.cta{background:var(--ink);color:#c9d2ec;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;width:520px;height:520px;right:-160px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(47,199,235,.25),transparent 65%)}
+.cta .wrap{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center}
+.cta h2{color:#fff}
+.cta .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.info{display:grid;gap:14px;list-style:none}
+.info li{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:16px 18px}
+.info .ic{width:42px;height:42px;border-radius:11px;margin:0;flex:none}
+.info .ic svg{width:19px;height:19px}
+.info small{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#8f9bc4}
+.info a,.info strong{color:#fff;font-weight:600}
+.info a:hover{color:var(--cyan)}
+
+/* footer */
+footer{background:#070d24;color:#8f9bc4;font-size:.92rem;padding:56px 0 28px}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:36px}
+footer img{height:88px;width:auto;margin-bottom:14px}
+footer h4{color:#fff;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+footer ul{list-style:none;display:grid;gap:9px}
+footer a:hover{color:var(--cyan)}
+.soc{display:inline-flex;width:40px;height:40px;border-radius:10px;align-items:center;justify-content:center;background:rgba(255,255,255,.07);margin-top:14px}
+.soc svg{width:18px;height:18px;fill:#fff}
+.copy{border-top:1px solid rgba(255,255,255,.08);margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.82rem}
+
+/* floating contact */
+.fab{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.fab-main{width:60px;height:60px;border-radius:50%;border:0;cursor:pointer;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 12px 28px -8px rgba(28,53,160,.7);display:grid;place-items:center;transition:transform .25s}
+.fab-main svg{width:26px;height:26px;fill:#fff;position:absolute;transition:opacity .2s,transform .25s}
+.fab-main .x{opacity:0;transform:rotate(-90deg)}
+.fab.on .fab-main .x{opacity:1;transform:none}
+.fab.on .fab-main .c{opacity:0;transform:rotate(90deg)}
+.fab-main:hover{transform:scale(1.06)}
+.fab-list{display:flex;flex-direction:column;align-items:flex-end;gap:10px;pointer-events:none}
+.fab-list a{display:flex;align-items:center;gap:10px;padding:10px 18px 10px 12px;border-radius:999px;color:#fff;font-weight:600;font-size:.9rem;box-shadow:0 10px 24px -10px rgba(0,0,0,.45);opacity:0;transform:translateY(12px) scale(.95);transition:opacity .2s,transform .25s}
+.fab-list a svg{width:24px;height:24px;fill:#fff}
+.fab-list .wa{background:#25d366}
+.fab-list .tg{background:#229ed9}
+.fab.on .fab-list{pointer-events:auto}
+.fab.on .fab-list a{opacity:1;transform:none}
+.fab.on .fab-list a:nth-child(2){transition-delay:.05s}
+.fab-hint{background:#fff;color:var(--ink);font-size:.8rem;padding:8px 12px;border-radius:10px;box-shadow:0 8px 20px -10px rgba(0,0,0,.35);opacity:0;transform:translateY(8px);transition:opacity .2s,transform .2s;pointer-events:none}
+.fab.on .fab-hint{opacity:1;transform:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+
+@media (max-width:980px){
+ .grid,.steps{grid-template-columns:1fr 1fr}
+ .split,.cta .wrap{grid-template-columns:1fr}
+ .fg{grid-template-columns:1fr 1fr}
+ .stats .wrap{grid-template-columns:1fr 1fr}
+ .tog{display:block}
+ .menu{position:fixed;top:0;right:0;height:100vh;width:min(320px,86vw);flex-direction:column;align-items:flex-start;gap:6px;padding:100px 30px 30px;background:#fff;transform:translateX(100%);transition:transform .3s;box-shadow:-20px 0 40px rgba(0,0,0,.3)}
+ .menu li{width:100%}
+ .menu a{display:block;padding:12px 0;font-size:.95rem}
+ .menu .btn{display:inline-flex;margin-top:14px;padding:13px 24px}
+ .open .menu{transform:none}
+ .tog{position:relative;z-index:2}
+}
+@media (max-width:640px){
+ .grid,.steps,.panels,.pt{grid-template-columns:1fr}
+ .fg{grid-template-columns:1fr}
+ .logo img{height:58px}
+ .hero .eyebrow{font-size:.7rem;letter-spacing:.1em}
+ .hero::before{background:linear-gradient(180deg,rgba(10,18,48,.7),rgba(10,18,48,.92))}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+ <div class="wrap">
+  <a href="#top" class="logo" aria-label="Star Technologies home"><img src="/img/logo.webp" width="95" height="128" alt="Star Technologies"></a>
+  <button class="tog" id="tog" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  <ul class="menu" id="menu">
+   <li><a href="#top">Home</a></li>
+   <li><a href="#about">About Us</a></li>
+   <li><a href="#solutions">Solutions</a></li>
+   <li><a href="#partnership">Partnership</a></li>
+   <li><a href="#join">Join Us</a></li>
+   <li><a href="#contact" class="btn btn-p">Contact</a></li>
+  </ul>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <img src="/img/hero.webp" srcset="/img/hero-800.webp 800w, /img/hero.webp 1600w" sizes="100vw" width="1600" height="899" alt="" fetchpriority="high">
+ <div class="wrap">
+  <span class="eyebrow">Star Technologies PLC &nbsp;·&nbsp; Dare to Dream</span>
+  <h1>Your trusted partner for the entire <em>digital transformation</em> journey</h1>
+  <p>A corporate venture capital and open innovation company in telecom and technology, investing in and collaborating with innovative, sustainable companies.</p>
+  <div class="acts">
+   <a href="#solutions" class="btn btn-p">Explore Now</a>
+   <a href="#contact" class="btn btn-o">Drop Us A Message</a>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="solutions">
+ <div class="wrap">
+  <div class="head c rv">
+   <span class="eyebrow">Our Solutions</span>
+   <h2>Smart solutions for every sector</h2>
+   <p>We deliver reliable services across telecom, banking, infrastructure, training, and consulting.</p>
+  </div>
+  <div class="grid">
+   <article class="card rv"><div class="im"><img src="/img/telecom.webp" width="640" height="427" loading="lazy" decoding="async" alt="Telecom"></div><div class="bd"><span class="n">01</span><h3>Telecom</h3><p>High-quality products and value-added services for mobile operators that boost engagement and revenue.</p><a class="more" href="#contact">Read More</a></div></article>
+   <article class="card rv"><div class="im"><img src="/img/banking.webp" width="640" height="427" loading="lazy" decoding="async" alt="Banking"></div><div class="bd"><span class="n">02</span><h3>Banking</h3><p>Reliable technology services and business solutions for the banking sector.</p><a class="more" href="#contact">Read More</a></div></article>
+   <article class="card rv"><div class="im"><img src="/img/training.webp" width="640" height="427" loading="lazy" decoding="async" alt="Trainings and certifications"></div><div class="bd"><span class="n">03</span><h3>Trainings &amp; Certifications</h3><p>Building skills and expertise through professional training and certification.</p><a class="more" href="#contact">Read More</a></div></article>
+   <article class="card rv"><div class="im"><img src="/img/consult.webp" width="640" height="427" loading="lazy" decoding="async" alt="Consultation"></div><div class="bd"><span class="n">04</span><h3>Consultation</h3><p>Expert consulting to guide your digital transformation — on time and at the best cost.</p><a class="more" href="#contact">Read More</a></div></article>
+   <article class="card rv"><div class="im"><img src="/img/gov.webp" width="640" height="427" loading="lazy" decoding="async" alt="Government and NGOs"></div><div class="bd"><span class="n">05</span><h3>Government &amp; NGO's</h3><p>Infrastructure technology that drives industrial and public-sector transformation.</p><a class="more" href="#contact">Read More</a></div></article>
+   <article class="card rv"><div class="im"><img src="/img/finance.webp" width="640" height="427" loading="lazy" decoding="async" alt="Finance"></div><div class="bd"><span class="n">06</span><h3>Finance</h3><p>Secure, modern solutions spanning cloud services and cybersecurity for finance.</p><a class="more" href="#contact">Read More</a></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="sec alt" style="padding-top:0;background:linear-gradient(#fff 0,#fff 120px,var(--bg) 120px)">
+ <div class="wrap panels">
+  <a class="panel rv" href="#contact"><img src="/img/consult.webp" width="640" height="427" loading="lazy" decoding="async" alt=""><div class="bd"><small>Result Guarantee</small><h3>Customer-centric, results-driven</h3><p>We are committed to services that put customers first and deliver measurable results.</p></div></a>
+  <a class="panel rv" href="#about"><img src="/img/trust.webp" width="640" height="427" loading="lazy" decoding="async" alt=""><div class="bd"><small>Experienced Teams &amp; Partners</small><h3>28+ years of expertise</h3><p>A seasoned team and a trusted partner network behind every engagement.</p></div></a>
+ </div>
+</section>
+
+<section class="sec" id="about">
+ <div class="wrap split">
+  <div class="ph rv"><img src="/img/digital.webp" width="640" height="698" loading="lazy" decoding="async" alt="Digital transformation"><div class="badge"><b>28+</b><span>Years of expertise</span></div></div>
+  <div class="rv">
+   <span class="eyebrow">About Us</span>
+   <h2>Founded on trust. Focused on relationships.</h2>
+   <p>Star Technologies PLC is a corporate venture capital and open innovation company in the telecom and technology sectors, with a global and local focus. We invest in and collaborate with innovative, sustainable, and promising companies to drive infrastructure technology for industrial transformation.</p>
+   <ul class="chips">
+    <li>Cloud Services</li><li>Cybersecurity</li><li>Business Solutions</li><li>Infrastructure Technology</li><li>Consulting</li>
+   </ul>
+   <a href="#contact" class="btn btn-p">Find Out More</a>
+  </div>
+ </div>
+</section>
+
+<section class="sec alt">
+ <div class="wrap">
+  <div class="head c rv"><span class="eyebrow">What Drives Us</span><h2>Our values guide every action and decision</h2></div>
+  <div class="steps">
+   <div class="step rv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div><h3>Mission</h3><p>Deliver services with efficiency and agility, achieving optimal results on time and at the best cost.</p></div>
+   <div class="step rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Vision</h3><p>Become one of the leading companies in Ethiopia and Africa investing in digital transformation — empowering the future through advanced, sustainable technology.</p></div>
+   <div class="step rv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>For Mobile Operators</h3><p>Experienced in turning premium digital products into profitable revenue streams, with several ways to help depending on your needs.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="stats">
+ <div class="wrap">
+  <div><b data-n="1844">1,844+</b><span>Completed Projects</span></div>
+  <div><b data-n="28">28+</b><span>Years of Experience</span></div>
+  <div><b data-n="500">500+</b><span>Partners</span></div>
+  <div><b data-n="142">142+</b><span>Projects</span></div>
+ </div>
+</section>
+
+<section class="sec" id="partnership">
+ <div class="wrap split">
+  <div class="rv">
+   <span class="eyebrow">Partnership</span>
+   <h2>Grow with our partner network</h2>
+   <p>Join Star Technologies' network of commercial and technical partners. Get access to advanced solutions, tools, and dedicated support, with a focus on telecom and digital communications.</p>
+   <div class="pt">
+    <div><h3>Commercial Partnership</h3><p>Flexible models, telecom solutions, and global growth opportunities for system integrators, VAS providers, technology partners, and consultants.</p></div>
+    <div><h3>Technical Partnership</h3><p>Collaborate with us on technology and infrastructure to deliver solutions together.</p></div>
+   </div>
+   <a href="#contact" class="btn btn-p">Become a Partner</a>
+  </div>
+  <div class="ph rv"><img src="/img/partner.webp" width="640" height="427" loading="lazy" decoding="async" alt="Partnership" style="aspect-ratio:4/3.6"></div>
+ </div>
+</section>
+
+<section class="sec alt" id="join">
+ <div class="wrap">
+  <div class="join rv">
+   <div>
+    <span class="eyebrow">Join Us</span>
+    <h2>Want to join?</h2>
+    <p>Be part of our growth and development toward a more connected, technologically advanced Ethiopia.</p>
+    <span class="note">We currently have no job openings — follow us for updates.</span>
+   </div>
+   <a href="https://www.linkedin.com/company/star-technologies-et/" target="_blank" rel="noopener" class="btn btn-p">Follow on LinkedIn</a>
+  </div>
+ </div>
+</section>
+
+<section class="sec cta" id="contact">
+ <div class="wrap">
+  <div class="rv">
+   <span class="eyebrow">Contact</span>
+   <h2>We're just one message away from helping you grow.</h2>
+   <p style="margin-top:14px">Reach out by phone, email, WhatsApp or Telegram — or visit our office at Mafi Mall.</p>
+   <div class="acts">
+    <a href="mailto:team@star-tech.website?subject=Support%20Request" class="btn btn-p">Drop Us A Message</a>
+    <a href="tel:+251116721313" class="btn btn-o">Call Us</a>
+   </div>
+  </div>
+  <ul class="info rv">
+   <li><span class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Phone</small><a href="tel:+251116721313">+251 11 672 1313</a></div></li>
+   <li><span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span><div><small>Email</small><a href="mailto:team@star-tech.website?subject=Support%20Request">team@star-tech.website</a></div></li>
+   <li><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Address</small><a href="https://maps.app.goo.gl/WaL6yv1kCWp5UCXH8" target="_blank" rel="noopener">Mafi Mall, 6th Floor, Bole Medhanialem, Addis Ababa, Ethiopia</a></div></li>
+   <li><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><div><small>Hours</small><strong>Mon – Sat, 8:30 AM – 11:30 PM</strong></div></li>
+  </ul>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="fg">
+   <div><img src="/img/logo.webp" width="95" height="128" loading="lazy" alt="Star Technologies"><p>Your trusted partner for the entire digital transformation journey. <br><strong style="color:#fff">Dare to Dream.</strong></p>
+    <a class="soc" href="https://www.linkedin.com/company/star-technologies-et/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a></div>
+   <div><h4>Company</h4><ul><li><a href="#about">About Us</a></li><li><a href="#partnership">Partnership</a></li><li><a href="#join">Join Us</a></li><li><a href="#contact">Contact</a></li></ul></div>
+   <div><h4>Solutions</h4><ul><li><a href="#solutions">Telecom</a></li><li><a href="#solutions">Banking</a></li><li><a href="#solutions">Trainings &amp; Certifications</a></li><li><a href="#solutions">Consultation</a></li><li><a href="#solutions">Government &amp; NGO's</a></li><li><a href="#solutions">Finance</a></li></ul></div>
+   <div><h4>Get in Touch</h4><ul><li><a href="tel:+251116721313">+251 11 672 1313</a></li><li><a href="mailto:team@star-tech.website">team@star-tech.website</a></li><li>Mafi Mall, 6th Floor, Bole Medhanialem, Addis Ababa</li><li>Mon – Sat, 8:30 AM – 11:30 PM</li></ul></div>
+  </div>
+  <div class="copy"><span>Star Technologies PLC © <span id="yr">2026</span></span><span>Dare to Dream</span></div>
+ </div>
+</footer>
+
+<div class="fab" id="fab">
+ <div class="fab-list" id="fabList">
+  <span class="fab-hint">Chat with us</span>
+  <a class="wa" id="waLink" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg>WhatsApp</a>
+  <a class="tg" id="tgLink" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6.2 13 1.3 11.5c-1-.3-1.1-1 .2-1.5L20.6 2.7c.9-.3 1.6.2 1.3 1.6z"/></svg>Telegram</a>
+ </div>
+ <button class="fab-main" id="fabBtn" aria-label="Contact us" aria-expanded="false" aria-controls="fabList">
+  <svg class="c" viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.8 2 11.5c0 2.4 1.2 4.6 3.1 6.1L4 21l4.1-1.9c1.2.4 2.5.6 3.9.6 5.5 0 10-3.8 10-8.5S17.5 3 12 3zm-4 9.8a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6zm4 0a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6zm4 0a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6z"/></svg>
+  <svg class="x" viewBox="0 0 24 24"><path d="M18.3 5.7a1 1 0 0 0-1.4 0L12 10.6 7.1 5.7a1 1 0 1 0-1.4 1.4l4.9 4.9-4.9 4.9a1 1 0 1 0 1.4 1.4l4.9-4.9 4.9 4.9a1 1 0 0 0 1.4-1.4L13.4 12l4.9-4.9a1 1 0 0 0 0-1.4z"/></svg>
+ </button>
+</div>
+
+<script>
+// ===== Contact settings — edit these =====
+var WHATSAPP_NUMBER = "251116721313"; // international format, digits only (no +, spaces or leading 0)
+var TELEGRAM_USERNAME = "";           // e.g. "startechnologies" (without @). Leave empty to use Telegram's share picker.
+// =========================================
+(function(){
+ var d=document,nav=d.getElementById('nav'),tog=d.getElementById('tog'),menu=d.getElementById('menu');
+ d.getElementById('yr').textContent=new Date().getFullYear();
+ var onS=function(){nav.classList.toggle('s',scrollY>40)};onS();addEventListener('scroll',onS,{passive:true});
+ tog.onclick=function(){var o=nav.classList.toggle('open');tog.setAttribute('aria-expanded',o)};
+ menu.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');tog.setAttribute('aria-expanded',false)}});
+
+ // pre-generated message, mentions the section the visitor is viewing
+ var secs={solutions:'your solutions',about:'Star Technologies',partnership:'partnership opportunities',join:'joining your team',contact:'your services'};
+ function msg(){
+  var topic='your services';
+  for(var k in secs){var el=d.getElementById(k);if(el){var r=el.getBoundingClientRect();if(r.top<innerHeight/2&&r.bottom>innerHeight/2)topic=secs[k]}}
+  return 'Hello Star Technologies! I visited your website and I would like to learn more about '+topic+'. Please get back to me. Thank you.';
+ }
+ var fab=d.getElementById('fab'),btn=d.getElementById('fabBtn'),wa=d.getElementById('waLink'),tg=d.getElementById('tgLink');
+ function links(){
+  var t=encodeURIComponent(msg());
+  wa.href='https://wa.me/'+WHATSAPP_NUMBER+'?text='+t;
+  tg.href=TELEGRAM_USERNAME?'https://t.me/'+TELEGRAM_USERNAME+'?text='+t:'https://t.me/share/url?url='+encodeURIComponent(location.origin)+'&text='+t;
+ }
+ function set(o){fab.classList.toggle('on',o);btn.setAttribute('aria-expanded',o);if(o)links()}
+ btn.onclick=function(e){e.stopPropagation();set(!fab.classList.contains('on'))};
+ d.addEventListener('click',function(e){if(!fab.contains(e.target))set(false)});
+ d.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+
+ // count-up stats
+ var st=d.querySelector('.stats');
+ if(st&&'IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  var nums=st.querySelectorAll('[data-n]');nums.forEach(function(b){b.textContent='0+'});
+  var so=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;so.disconnect();var t0=performance.now();
+   (function f(t){var p=Math.min((t-t0)/1600,1),e=1-Math.pow(1-p,3);nums.forEach(function(b){b.textContent=Math.round(b.dataset.n*e).toLocaleString('en-US')+'+'});if(p<1)requestAnimationFrame(f)})(t0)},{threshold:.4});
+  so.observe(st);
+ }
+ // reveal on scroll
+ var els=d.querySelectorAll('.rv');
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+ }else els.forEach(function(e){e.classList.add('in')});
+})();
+</script>
+</body>
+</html>
